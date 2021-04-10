@@ -1,6 +1,6 @@
-.App {
-  text-align: center;
-}
+/* .body{
+ height: 300vh;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -34,5 +34,85 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.loginPage {
+   height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.right, .left{
+  height: 100vh;
+  width:100%;
+}
+
+@media  screen and (min-width:900px){
+  .right, .left{
+    height: 150vh;
+    
+  }
+}
+.right {
+  
+  background-color: #2D84FC
+}
+
+.left {
+  
+  background-color: #FFFFFF;
+}
+.left h2 {
+  font-family: ClearfaceMTStd-Bold;
+  font-size: 3.11111rem;
+  line-height: 3.11111rem;
+  letter-spacing: -0.0722222rem;
+  color: #ffffff;
+  
+}
+.left p {
+  color: rgb(255, 255, 255);
+  font-family: BasisGrotesquePro-Regular, sans-serif;
+  font-size: 0.833333rem;
+  line-height: 1.11111rem;
+  letter-spacing: 0rem;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.login_right_text{
+  width: max-content;
+  color:#FFFFFF;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.login_left_form{
+  width: max-content;
+  text-align: center;
+  margin-top: 35%;
+}
+.moveLeft{
+  margin-left: 3rem;
+}
+@media(max-width:500px){
+  .login_left_form{
+   width:unset;
+    
+  }
+  .moveLeft{
+    margin-left: 0rem;
   }
 }
